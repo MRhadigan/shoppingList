@@ -65,14 +65,16 @@ public class shoppingList {
 
 	private static void highest(ArrayList<String> shoppingCart, HashMap<String, Double> inventory) {
 		double highest = 0.0;
-		String format = "\t:\t";
+		
+		String format2 = "%-12s : %s";
 		
 		for ( String fruit : shoppingCart) {
 			
 			highest += inventory.get(fruit);
 				highest = inventory.get(fruit);
 			
-		System.out.println(fruit + "s" + format  + highest);
+		System.out.printf(format2, fruit, inventory.get(fruit));
+		System.out.println();
 		}
 	}
 
