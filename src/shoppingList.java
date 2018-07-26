@@ -37,6 +37,7 @@ public class shoppingList {
 		
 		System.out.println("Thanks for your order! ");
 		System.out.println("Here's what you got: ");
+		System.out.println("====================");
 	
 		
 		
